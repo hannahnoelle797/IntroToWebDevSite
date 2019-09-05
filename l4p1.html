@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+	<html lang = "en">
+	<head>
+		<title> Lab Exercise 4 Part 1 </title>
+		<meta charset = "UTF-8" />
+	</head>
+	<body>
+		<a href = "index.html">Back to Home Page </a>
+		<br /> <br /> <br />
+
+		<script>
+			var i = 0, sum = 7, d = 9;
+			var txt = "Sequence";
+			document.write("<table>");
+			document.write("<th>" + (txt) + "</th>");
+			for (i = 0; i < 20; i++)
+			{
+            			document.write("<tr>");
+				if (i == 0)
+                			document.write("<td>" + (sum) + "</td>");
+				else
+				{
+					sum += 9;
+					document.write("<td>" + (sum) + "</td>");
+				}
+        			document.write("</tr>");
+        		}			
+			document.write("</table>");
+		</script>
+	</body>
+</html>

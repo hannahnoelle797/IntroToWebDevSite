@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Lab Exercise 5, Part 1</title>
+		<meta charset = "UTF-8"/>
+		<script>
+			var curTop = "wrench";
+			function moveToTop(newTopImg)
+			{
+				cTop = document.getElementById(curTop).style;
+ 				nTop = document.getElementById(newTopImg).style;
+ 				cTop.zIndex = "0";
+ 				nTop.zIndex = "10";
+ 				curTop = newTopImg;
+			}
+		</script>
+		<style type = "text/css">
+      			.ImgPos {position: absolute; 
+               			top: 200px; left: 500px; z-index: 0;}
+			.button1Pos {position: absolute;
+				top: 460px; left: 550px; z-index: 0;}
+			.button2Pos {position: absolute;
+				top: 460px; left: 650px; z-index: 0;}
+			.button3Pos {position: absolute;
+				top: 460px; left: 750px; z-index: 0;}
+			.textPos {position: absolute;
+				top: 500px; left: 15px;}
+		</style>		
+	</head>
+	<body>
+		<a href = "index.html">Back to Home Page </a>
+		<br />
+		<h1 style = "text-align: center"> Image Replacement</h1>
+		<h2 style = "text-align: center"> Lab Exercise 5, Part 1</h2>
+
+		<form>
+			<img id = "chisels" class = "ImgPos" src = "/tools/chisels.jpg"  height = "248" width = "364" alt = "Picture of Chisels" />
+			<img id = "planer"  class = "ImgPos" src = "/tools/planer.jpg"   height = "248" width = "364" alt = "Pictures of a Planer" />
+			<img id = "wrench"  class = "ImgPos" src = "/tools/spanners.jpg" height = "248" width = "364" alt = "Picture of Spanners" />
+			<br />
+			<input class = "button1Pos" type = "button" value = "Chisels" onclick = "moveToTop('chisels')" />
+			<input class = "button2Pos" type = "button" value = "Planer" onclick = "moveToTop('planer')" />
+			<input class = "button3Pos" type = "button" value = "Wrenches" onclick = "moveToTop('wrench')" />
+		</form>
+		<br /><br /><br /><br />
+		<p class = "textPos">
+			I chose to use the zIndex method because it was easier to accomplish. Looking at examples using visability, I felt as though it would require making two images
+			hidden rather than just moving a single image forward.<br />The result of using visability would mean more code and more opportunity to mess up. I could 
+			accidentally hide the wrong images and get an incorrect result. Using zIndex meant I had to create one function and move<br />only one image. This is preferred 
+			as there is less chance for error.<br />
+			To accomplish the task, I created a function called moveToTop which takes the id of the image that matches the button as a
+			parameter. For example, the Chisels button will pass the parameter &apos;chisels&apos; when clicked.<br />Inside the method, I have variables for the current top 
+			image (curTop and cTop) and variables for the new top image(newTopImg and nTop). newTopImg is the variable name for the function parameter. The style<br />of the 
+			current image (curTop)and the style of the new top image (newTopImg) are retrieved and stored as cTop and nTop, respectively. The zIndex for cTop is set to zero, 
+			and the zIndex for nTop is set to 10. curTop is<br />then changed to the value of newTopImg. As a result, the proper image becomes the top image when its 
+			respective button is clicked. 
+		</p>
+	</body>
+</html>

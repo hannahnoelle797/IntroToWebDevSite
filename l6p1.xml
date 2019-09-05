@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<toolCatalog xmlns="http://weblab.kennesaw.edu/toolSchema"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://weblab.kennesaw.edu/toolSchema
+		http://weblab.kennesaw.edu/toolschema.xsd">
+
+	<toolPackage>
+        	<type>Professional Wood Carving Chisel Knives (Set of 4)</type>
+		<picLocation>/tools/chisels.jpg</picLocation>
+		<weight>3.4</weight>
+		<price>19.99</price>
+	</toolPackage>
+	<toolPackage>
+        	<type>Cast Iron Hand Wood Planer</type>
+		<picLocation>/tools/chisels.jpg</picLocation>
+		<weight>4.8</weight>
+		<price>29.99</price>
+	</toolPackage>
+	<toolPackage>
+        	<type>Ratcheting Wrench Set (Set of 4)</type>
+		<picLocation>/tools/chisels.jpg</picLocation>
+		<weight>4.4</weight>
+		<price>14.99</price>
+	</toolPackage>         
+</toolCatalog>

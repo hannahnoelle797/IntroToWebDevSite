@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<title>Lab Exercise 5, Part 2</title>
+		<meta charset = "UTF-8"/>
+		<script>
+			var num = 0;
+			var imageArray = new Array();
+			imageArray[0] = "chisels";
+			imageArray[1] = "planer";
+			imageArray[2] = "wrench";
+			var idx = 0;
+			function nextSlide()
+			{
+				cSlide = document.getElementById(imageArray[idx]).style;
+				cSlide.zIndex = ++num;
+				idx = num % 3;
+
+			}
+		</script>
+		<style type = "text/css">
+      			.ImgPos {position: absolute; 
+               			top: 200px; left: 500px; z-index: 0;}
+			.buttonPos {position: absolute;
+				top: 460px; left: 650px; z-index: 0;}
+			.textPos {position: absolute;
+				top: 500px; left: 15px;}
+		</style>		
+	</head>
+	<body>
+		<a href = "index.html">Back to Home Page </a>
+		<br />
+		<h1 style = "text-align: center"> Image Slide Show</h1>
+		<h2 style = "text-align: center"> Lab Exercise 5, Part 2</h2>
+
+		<form>
+			<img id = "chisels" class = "ImgPos" src = "/tools/chisels.jpg"  height = "248" width = "364" alt = "Picture of Chisels" />
+			<img id = "planer"  class = "ImgPos" src = "/tools/planer.jpg"   height = "248" width = "364" alt = "Pictures of a Planer" />
+			<img id = "wrench"  class = "ImgPos" src = "/tools/spanners.jpg" height = "248" width = "364" alt = "Picture of Spanners" />
+			<br />
+			<input class = "buttonPos" type = "button" value = "Next" onclick = "nextSlide()" />
+		</form>
+		<br /><br /><br /><br />
+		<p class = "textPos">
+			One practical use for a slide show is viewing different angles of an object. We see this all the time when looking at things such as cars, clothing, and furniture 
+			pieces. It allows the user to see different angles of the object.<br />For example, let&apos;s say I want to buy a shirt. To ensure that I like the shirt I want to 
+			be able to see the front and the back of the shirt. Having a slide show go between the two images would be very useful. If the back of the shirt<br />had a strange 
+			design on it, but I couldn&apos;t flip between the images to see it, I would be very disappointed when I recieved the shirt. This also applies to buying a car or 
+			viewing pieces of furniture. I want to know that I like every<br />angle of the object before purchasing.<br />
+			Another use for a slide show is for companies or organizations that hold events. Placing a slide show onto their site would allow users to cycle through 
+			&quot;fliers&quot; and see each event is occuring. Being able to cycle through endlessly<br />makes sure that the user can go back to the slide of an event if they 
+			skip it. I've seen this on websites for libraries, high schools, and colleges. It could also be useful for businesses that do events for their employees. 
+		</p>
+	</body>
+</html>
